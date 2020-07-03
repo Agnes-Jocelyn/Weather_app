@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Weather App</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#list"
+              >Weather <span class="sr-only">(current)</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--isi-->
+    <div class="bg">
+      <div class="container mx-auto">
+        <div class="head">
+          <h1>Check Your Weather Here</h1>
+          <a href="#list" class="iconarrow" >
+            <i class="fas fa-arrow-circle-down fa-3x "></i>
+          </a>
+        </div>
+      </div>
+    </div>
+   
+
+    <div class="isi" >
+      <div class="container test1" id="list">
+        <div class="card mb-4 mx-auto" style="max-width: 540px;">
+          <div class="row no-gutters" > 
+            <div class="col-md-4">
+              <center>
+                <img src="" alt="" id="icon" class="icon" />
+                <h5 class="card-text" id="city_desc"></h5>
+                <h6 class="card-text" id="city_info"></h6>
+              </center>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title" id="city_name"></h3>
+                <h6 class="card-text" id="city_date"></h6>
+                <h6>Temperature : <span id="city_temp"></span> °C</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card mb-4 mx-auto" style="max-width: 540px;">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <center>
+                <img src="" alt="" id="icon2" class="icon" />
+                <h5 class="card-text" id="city_desc2"></h5>
+                <h6 class="card-text" id="city_info2"></h6>
+              </center>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title" id="city_name2"></h3>
+                <h6 class="card-text" id="city_date2"></6>
+                <h6>Temperature : <span id="city_temp2"></span> °C</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card mb-4 mx-auto" style="max-width: 540px;" id="#list">
+          <div class="row no-gutters">
+            <div class="col-md-4">
+              <center>
+                <img src="" alt="" id="icon3" class="icon" />
+                <h5 class="card-text" id="city_desc3"></h5>
+                <h6 class="card-text" id="city_info3"></h6>
+              </center>
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h3 class="card-title" id="city_name3"></h3>
+                <h6 class="card-text" id="city_date3"></6>
+                <h6>Temperature : <span id="city_temp3"></span> °C</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <center>
+        <h5>&copy; 2020 by AgnesJ</h5>
+      </center>
+      
+    </div>
+
+    <!-- Javascript -->
+    <script src="Index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
